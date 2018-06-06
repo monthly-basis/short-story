@@ -24,6 +24,10 @@ class Module
     {
         return [
             'factories' => [
+                ShortStoryService\Submit::class => function ($serviceManager) {
+                    return new ShortStoryService\Submit(
+                    );
+                },
                 ShortStoryTable\ShortStory::class => function ($serviceManager) {
                     return new ShortStoryTable\ShortStory(
                         $serviceManager->get('main')
