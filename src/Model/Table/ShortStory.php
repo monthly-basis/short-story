@@ -18,18 +18,20 @@ class ShortStory
     }
 
     public function insert(
+        int $userId,
         string $title,
         string $body
     ) {
         $sql = '
             INSERT
               INTO `short_story` (
-                   `title`, `body`
+                   `user_id`, `title`, `body`
                    )
             VALUES (?, ?)
                  ;
         ';
         $parameters = [
+            $userId,
             $title,
             $body,
         ];
