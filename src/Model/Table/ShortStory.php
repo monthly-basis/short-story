@@ -40,4 +40,21 @@ class ShortStory
                     ->execute($parameters)
                     ->getGeneratedValue();
     }
+
+    public function select() : Generator
+    {
+        $sql = '
+            SELECT `short_story_id`
+                 , `user_id`
+                 , `title`
+                 , `body`
+              FROM `short_story`
+             ORDER
+                BY `short_story_id` DESC
+                 ;
+        ';
+        foreach ($this->adapter->query($sql)->execute() as $row) {
+            yield($row);
+        }
+    }
 }
