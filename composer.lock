@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5a5456ad84fed537749bbd75d97946ce",
-    "content-hash": "fbcb8da772130b5f161b008e3c25103e",
+    "hash": "89b1048791e1c72d3a1b8b83c752aa17",
+    "content-hash": "e7fcdfeac67e97e949f30e368553273a",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -93,6 +93,36 @@
             "time": "2015-06-14 21:17:01"
         },
         {
+            "name": "leo-galleguillos/flash",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LeoGalleguillos/Flash.git",
+                "reference": "b326f261caa5def2df78c17be436f116881d20e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LeoGalleguillos/Flash/zipball/b326f261caa5def2df78c17be436f116881d20e9",
+                "reference": "b326f261caa5def2df78c17be436f116881d20e9",
+                "shasum": ""
+            },
+            "require": {
+                "zendframework/zend-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LeoGalleguillos\\Flash\\": "src/",
+                    "LeoGalleguillos\\FlashTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2018-02-05 17:33:48"
+        },
+        {
             "name": "myclabs/deep-copy",
             "version": "1.7.0",
             "source": {
@@ -139,16 +169,16 @@
         },
         {
             "name": "phar-io/manifest",
-            "version": "dev-master",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phar-io/manifest.git",
-                "reference": "014feadb268809af7c8e2f7ccd396b8494901f58"
+                "reference": "2df402786ab5368a0169091f61a7c1e0eb6852d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phar-io/manifest/zipball/014feadb268809af7c8e2f7ccd396b8494901f58",
-                "reference": "014feadb268809af7c8e2f7ccd396b8494901f58",
+                "url": "https://api.github.com/repos/phar-io/manifest/zipball/2df402786ab5368a0169091f61a7c1e0eb6852d0",
+                "reference": "2df402786ab5368a0169091f61a7c1e0eb6852d0",
                 "shasum": ""
             },
             "require": {
@@ -190,7 +220,7 @@
                 }
             ],
             "description": "Component for reading phar.io manifest information from a PHP Archive (PHAR)",
-            "time": "2017-04-07 07:07:10"
+            "time": "2017-03-05 18:14:27"
         },
         {
             "name": "phar-io/version",
@@ -709,12 +739,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "39786a30d2cf34ba4955ec2287c53bdc8a4aa9e9"
+                "reference": "d0dd8ce9d5ab922d80d7e3a758601ae587533bdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/39786a30d2cf34ba4955ec2287c53bdc8a4aa9e9",
-                "reference": "39786a30d2cf34ba4955ec2287c53bdc8a4aa9e9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d0dd8ce9d5ab922d80d7e3a758601ae587533bdc",
+                "reference": "d0dd8ce9d5ab922d80d7e3a758601ae587533bdc",
                 "shasum": ""
             },
             "require": {
@@ -785,7 +815,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-06-10 12:07:12"
+            "time": "2018-06-18 16:54:44"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -2097,12 +2127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-router.git",
-                "reference": "866dc8cb9197744c69efe6dab512439e493bbdc7"
+                "reference": "efe84a7e99431de4fb76d6a155f87e1fb39fc2a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-router/zipball/866dc8cb9197744c69efe6dab512439e493bbdc7",
-                "reference": "866dc8cb9197744c69efe6dab512439e493bbdc7",
+                "url": "https://api.github.com/repos/zendframework/zend-router/zipball/efe84a7e99431de4fb76d6a155f87e1fb39fc2a0",
+                "reference": "efe84a7e99431de4fb76d6a155f87e1fb39fc2a0",
                 "shasum": ""
             },
             "require": {
@@ -2126,8 +2156,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev",
-                    "dev-develop": "3.1-dev"
+                    "dev-master": "3.1.x-dev",
+                    "dev-develop": "3.2.x-dev"
                 },
                 "zf": {
                     "component": "Zend\\Router",
@@ -2151,7 +2181,7 @@
                 "zend",
                 "zf"
             ],
-            "time": "2018-02-03 03:45:22"
+            "time": "2018-06-18 21:12:47"
         },
         {
             "name": "zendframework/zend-servicemanager",
@@ -2547,7 +2577,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "leo-galleguillos/flash": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
