@@ -11,8 +11,9 @@ class Submit
     public function __construct(
         FlashService\Flash $flashService,
         ShortStoryTable\ShortStory $shortStoryTable
-    )
-    {
+    ) {
+        $this->flashService    = $flashService;
+        $this->shortStoryTable = $shortStoryTable;
     }
 
     public function submit(
@@ -29,5 +30,13 @@ class Submit
             $this->flashService->set('errors', $errors);
             throw new Exception('Invalid form input.');
         }
+
+        $shortStoryId = $this->shortStoryTable->insert(
+            $userEntity->getUserId(),
+            $_POST['title'],
+            $_POST['body']
+        );
+
+        return $shortStoryId;
     }
 }

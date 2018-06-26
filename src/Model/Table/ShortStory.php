@@ -27,7 +27,7 @@ class ShortStory
               INTO `short_story` (
                    `user_id`, `title`, `body`
                    )
-            VALUES (?, ?)
+            VALUES (?, ?, ?)
                  ;
         ';
         $parameters = [
