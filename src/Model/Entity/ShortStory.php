@@ -7,17 +7,17 @@ class ShortStory
     protected $shortStoryId;
     protected $title;
 
-    public function getBody() : string
+    public function getBody(): string
     {
         return $this->body;
     }
 
-    public function getShortStoryId() : int
+    public function getShortStoryId(): int
     {
         return $this->shortStoryId;
     }
 
-    public function getTitle() : title
+    public function getTitle(): string
     {
         return $this->title;
     }
