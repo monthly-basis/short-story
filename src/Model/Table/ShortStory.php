@@ -57,4 +57,21 @@ class ShortStory
             yield($row);
         }
     }
+
+    public function selectWhereShortStoryId(int $shortStoryId): array
+    {
+        $sql = '
+            SELECT `short_story_id`
+                 , `user_id`
+                 , `title`
+                 , `body`
+              FROM `short_story`
+             WHERE `short_story_id` = ?
+                 ;
+        ';
+        $parameters = [
+            $shortStoryId,
+        ];
+        return $this->adapter->query($sql)->execute($parameters);
+    }
 }
