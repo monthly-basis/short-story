@@ -1,6 +1,8 @@
 <?php
 namespace LeoGalleguillos\ShortStory\Model\Entity;
 
+use LeoGalleguillos\ShortStory\Model\Entity as ShortStoryEntity;
+
 class ShortStory
 {
     protected $body;
@@ -22,19 +24,19 @@ class ShortStory
         return $this->title;
     }
 
-    public function setBody(string $body)
+    public function setBody(string $body): ShortStoryEntity\ShortStory
     {
         $this->body = $body;
         return $this;
     }
 
-    public function setShortStoryId(int $shortStoryId)
+    public function setShortStoryId(int $shortStoryId): ShortStoryEntity\ShortStory
     {
         $this->shortStoryId = $shortStoryId;
         return $this;
     }
 
-    public function setTitle(string $title)
+    public function setTitle(string $title): ShortStoryEntity\ShortStory
     {
         $this->title = $title;
         return $this;
