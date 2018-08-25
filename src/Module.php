@@ -15,8 +15,14 @@ class Module
         return [
             'view_helpers' => [
                 'aliases' => [
+                    'getRootRelativeUrl' => ShortStoryHelper\RootRelativeUrl::class,
                 ],
                 'factories' => [
+                    ShortStoryHelper\RootRelativeUrl::class => function ($serviceManager) {
+                        return new ShortStoryHelper\RootRelativeUrl(
+                            $serviceManager->get(ShortStoryService\RootRelativeUrl::class)
+                        );
+                    },
                 ],
             ],
         ];
