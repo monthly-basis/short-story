@@ -41,7 +41,13 @@ class ShortStory
                     ->getGeneratedValue();
     }
 
-    public function select() : Generator
+    /**
+     * Select.
+     *
+     * @yield array
+     * @return Generator
+     */
+    public function select(): Generator
     {
         $sql = '
             SELECT `short_story_id`
@@ -51,6 +57,7 @@ class ShortStory
               FROM `short_story`
              ORDER
                 BY `short_story_id` DESC
+             LIMIT 100
                  ;
         ';
         foreach ($this->adapter->query($sql)->execute() as $row) {
