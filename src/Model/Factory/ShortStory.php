@@ -18,9 +18,12 @@ class ShortStory
      * @param array $array
      * @return ShortStoryEntity\ShortStory
      */
-    public function buildFromArray(array $array) : ShortStoryEntity\ShortStory
+    public function buildFromArray(array $array): ShortStoryEntity\ShortStory
     {
         $shortStoryEntity = new ShortStoryEntity\ShortStory();
+        $shortStoryEntity->setBody($array['body'])
+                         ->setShortStoryId($array['short_story_id'])
+                         ->setTitle($array['title']);
 
         return $shortStoryEntity;
     }
