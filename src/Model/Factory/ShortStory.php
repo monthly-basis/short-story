@@ -2,11 +2,12 @@
 namespace LeoGalleguillos\ShortStory\Model\Factory;
 
 use LeoGalleguillos\ShortStory\Model\Entity as ShortStoryEntity;
+use LeoGalleguillos\ShortStory\Model\Table as ShortStoryTable;
 
 class ShortStory
 {
     public function __construct(
-        ShortStoryTable $shortStoryTable
+        ShortStoryTable\ShortStory $shortStoryTable
     ) {
         $this->shortStoryTable = $shortStoryTable;
     }
@@ -22,5 +23,13 @@ class ShortStory
         $shortStoryEntity = new ShortStoryEntity\ShortStory();
 
         return $shortStoryEntity;
+    }
+
+    public function buildFromShortStoryId(
+        int $shortStoryId
+    ): ShortStoryEntity\ShortStory {
+        return $this->buildFromArray(
+            $this->shortStoryTable->selectWhereShortStoryId($shortStoryId)
+        );
     }
 }
