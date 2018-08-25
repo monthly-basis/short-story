@@ -6,6 +6,7 @@ use LeoGalleguillos\ShortStory\Model\Factory as ShortStoryFactory;
 use LeoGalleguillos\ShortStory\Model\Service as ShortStoryService;
 use LeoGalleguillos\ShortStory\Model\Table as ShortStoryTable;
 use LeoGalleguillos\ShortStory\View\Helper as ShortStoryHelper;
+use LeoGalleguillos\String\Model\Service as StringService;
 
 class Module
 {
@@ -28,6 +29,11 @@ class Module
                 ShortStoryFactory\ShortStory::class => function ($serviceManager) {
                     return new ShortStoryFactory\ShortStory(
                         $serviceManager->get(ShortStoryTable\ShortStory::class)
+                    );
+                },
+                ShortStoryService\RootRelativeUrl::class => function ($serviceManager) {
+                    return new ShortStoryService\RootRelativeUrl(
+                        $serviceManager->get(StringService\UrlFriendly::class)
                     );
                 },
                 ShortStoryService\Submit::class => function ($serviceManager) {

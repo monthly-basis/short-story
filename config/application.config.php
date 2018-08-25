@@ -4,6 +4,7 @@ return [
     'modules' => [
         'LeoGalleguillos\Flash',
         'LeoGalleguillos\ShortStory',
+        'LeoGalleguillos\String',
         'Zend\Db',
         'Zend\Router',
     ],
