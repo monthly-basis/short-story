@@ -72,6 +72,6 @@ class ShortStory
         $parameters = [
             $shortStoryId,
         ];
-        return $this->adapter->query($sql)->execute($parameters);
+        return $this->adapter->query($sql)->execute($parameters)->current();
     }
 }
