@@ -42,6 +42,12 @@ class Module
                         $serviceManager->get(StringService\UrlFriendly::class)
                     );
                 },
+                ShortStoryService\ShortStories::class => function ($serviceManager) {
+                    return new ShortStoryService\ShortStories(
+                        $serviceManager->get(ShortStoryFactory\ShortStory::class),
+                        $serviceManager->get(ShortStoryTable\ShortStory::class)
+                    );
+                },
                 ShortStoryService\Submit::class => function ($serviceManager) {
                     return new ShortStoryService\Submit(
                         $serviceManager->get(FlashService\Flash::class),
