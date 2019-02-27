@@ -8,6 +8,7 @@ class ShortStory
     protected $body;
     protected $shortStoryId;
     protected $title;
+    protected $userId;
 
     public function getBody(): string
     {
@@ -22,6 +23,11 @@ class ShortStory
     public function getTitle(): string
     {
         return $this->title;
+    }
+
+    public function getUserId(): int
+    {
+        return $this->userId;
     }
 
     public function setBody(string $body): ShortStoryEntity\ShortStory
@@ -39,6 +45,12 @@ class ShortStory
     public function setTitle(string $title): ShortStoryEntity\ShortStory
     {
         $this->title = $title;
+        return $this;
+    }
+
+    public function setUserId(int $userId): ShortStoryEntity\ShortStory
+    {
+        $this->userId = $userId;
         return $this;
     }
 }
