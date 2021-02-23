@@ -2,7 +2,7 @@
 
 return [
     'modules' => [
-        'LeoGalleguillos\Flash',
+        'MonthlyBasis\Flash',
         'LeoGalleguillos\ShortStory',
         'LeoGalleguillos\String',
         'Zend\Db',

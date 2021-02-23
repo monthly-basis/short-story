@@ -2,7 +2,7 @@
 namespace LeoGalleguillos\ShortStory\Model\Service;
 
 use Exception;
-use LeoGalleguillos\Flash\Model\Service as FlashService;
+use MonthlyBasis\Flash\Model\Service as FlashService;
 use LeoGalleguillos\ShortStory\Model\Table as ShortStoryTable;
 use LeoGalleguillos\User\Model\Entity as UserEntity;
 

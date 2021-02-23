@@ -1,7 +1,7 @@
 <?php
 namespace LeoGalleguillos\ShortStory;
 
-use LeoGalleguillos\Flash\Model\Service as FlashService;
+use MonthlyBasis\Flash\Model\Service as FlashService;
 use LeoGalleguillos\ShortStory\Model\Factory as ShortStoryFactory;
 use LeoGalleguillos\ShortStory\Model\Service as ShortStoryService;
 use LeoGalleguillos\ShortStory\Model\Table as ShortStoryTable;
