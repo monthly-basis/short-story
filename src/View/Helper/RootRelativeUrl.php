@@ -1,9 +1,9 @@
 <?php
-namespace LeoGalleguillos\ShortStory\View\Helper;
+namespace MonthlyBasis\ShortStory\View\Helper;
 
-use LeoGalleguillos\ShortStory\Model\Entity as ShortStoryEntity;
-use LeoGalleguillos\ShortStory\Model\Service as ShortStoryService;
-use LeoGalleguillos\ShortStory\View\Helper as ShortStoryHelper;
+use MonthlyBasis\ShortStory\Model\Entity as ShortStoryEntity;
+use MonthlyBasis\ShortStory\Model\Service as ShortStoryService;
+use MonthlyBasis\ShortStory\View\Helper as ShortStoryHelper;
 use Laminas\View\Helper\AbstractHelper;
 
 class RootRelativeUrl extends AbstractHelper

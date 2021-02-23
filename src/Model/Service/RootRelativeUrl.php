@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\ShortStory\Model\Service;
+namespace MonthlyBasis\ShortStory\Model\Service;
 
-use LeoGalleguillos\ShortStory\Model\Entity as ShortStoryEntity;
-use LeoGalleguillos\ShortStory\Model\Service as ShortStoryService;
+use MonthlyBasis\ShortStory\Model\Entity as ShortStoryEntity;
+use MonthlyBasis\ShortStory\Model\Service as ShortStoryService;
 use MonthlyBasis\String\Model\Service as StringService;
 
 class RootRelativeUrl

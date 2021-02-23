@@ -1,10 +1,10 @@
 <?php
-namespace LeoGalleguillos\ShortStoryTest\Model\Table;
+namespace MonthlyBasis\ShortStoryTest\Model\Table;
 
 use ArrayObject;
 use Exception;
-use LeoGalleguillos\ShortStory\Model\Table as ShortStoryTable;
-use LeoGalleguillos\ShortStoryTest\TableTestCase;
+use MonthlyBasis\ShortStory\Model\Table as ShortStoryTable;
+use MonthlyBasis\ShortStoryTest\TableTestCase;
 use Laminas\Db\Adapter\Adapter;
 use PHPUnit\Framework\TestCase;
 

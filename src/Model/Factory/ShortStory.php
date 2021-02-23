@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\ShortStory\Model\Factory;
+namespace MonthlyBasis\ShortStory\Model\Factory;
 
-use LeoGalleguillos\ShortStory\Model\Entity as ShortStoryEntity;
-use LeoGalleguillos\ShortStory\Model\Table as ShortStoryTable;
+use MonthlyBasis\ShortStory\Model\Entity as ShortStoryEntity;
+use MonthlyBasis\ShortStory\Model\Table as ShortStoryTable;
 
 class ShortStory
 {

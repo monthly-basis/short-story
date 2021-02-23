@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\ShortStory\Model\Entity;
+namespace MonthlyBasis\ShortStory\Model\Entity;
 
-use LeoGalleguillos\ShortStory\Model\Entity as ShortStoryEntity;
+use MonthlyBasis\ShortStory\Model\Entity as ShortStoryEntity;
 
 class ShortStory
 {

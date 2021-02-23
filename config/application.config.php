@@ -3,7 +3,7 @@
 return [
     'modules' => [
         'MonthlyBasis\Flash',
-        'LeoGalleguillos\ShortStory',
+        'MonthlyBasis\ShortStory',
         'MonthlyBasis\String',
         'Laminas\Db',
         'Laminas\Router',

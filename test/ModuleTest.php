@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\ShortStoryTest;
+namespace MonthlyBasis\ShortStoryTest;
 
-use LeoGalleguillos\ShortStory\Module;
+use MonthlyBasis\ShortStory\Module;
 use PHPUnit\Framework\TestCase;
 use Laminas\Mvc\Application;
 

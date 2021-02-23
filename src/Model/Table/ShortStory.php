@@ -1,5 +1,5 @@
 <?php
-namespace LeoGalleguillos\ShortStory\Model\Table;
+namespace MonthlyBasis\ShortStory\Model\Table;
 
 use Exception;
 use Generator;

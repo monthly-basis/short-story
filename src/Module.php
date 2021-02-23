@@ -1,11 +1,11 @@
 <?php
-namespace LeoGalleguillos\ShortStory;
+namespace MonthlyBasis\ShortStory;
 
 use MonthlyBasis\Flash\Model\Service as FlashService;
-use LeoGalleguillos\ShortStory\Model\Factory as ShortStoryFactory;
-use LeoGalleguillos\ShortStory\Model\Service as ShortStoryService;
-use LeoGalleguillos\ShortStory\Model\Table as ShortStoryTable;
-use LeoGalleguillos\ShortStory\View\Helper as ShortStoryHelper;
+use MonthlyBasis\ShortStory\Model\Factory as ShortStoryFactory;
+use MonthlyBasis\ShortStory\Model\Service as ShortStoryService;
+use MonthlyBasis\ShortStory\Model\Table as ShortStoryTable;
+use MonthlyBasis\ShortStory\View\Helper as ShortStoryHelper;
 use MonthlyBasis\String\Model\Service as StringService;
 
 class Module

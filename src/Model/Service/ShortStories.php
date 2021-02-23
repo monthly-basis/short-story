@@ -1,10 +1,10 @@
 <?php
-namespace LeoGalleguillos\ShortStory\Model\Service;
+namespace MonthlyBasis\ShortStory\Model\Service;
 
 use Generator;
-use LeoGalleguillos\ShortStory\Model\Entity as ShortStoryEntity;
-use LeoGalleguillos\ShortStory\Model\Factory as ShortStoryFactory;
-use LeoGalleguillos\ShortStory\Model\Table as ShortStoryTable;
+use MonthlyBasis\ShortStory\Model\Entity as ShortStoryEntity;
+use MonthlyBasis\ShortStory\Model\Factory as ShortStoryFactory;
+use MonthlyBasis\ShortStory\Model\Table as ShortStoryTable;
 
 class ShortStories
 {
