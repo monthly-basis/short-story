@@ -3,7 +3,7 @@ namespace LeoGalleguillos\ShortStory\Model\Service;
 
 use LeoGalleguillos\ShortStory\Model\Entity as ShortStoryEntity;
 use LeoGalleguillos\ShortStory\Model\Service as ShortStoryService;
-use LeoGalleguillos\String\Model\Service as StringService;
+use MonthlyBasis\String\Model\Service as StringService;
 
 class RootRelativeUrl
 {
