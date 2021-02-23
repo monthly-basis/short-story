@@ -5,7 +5,7 @@ use ArrayObject;
 use Exception;
 use LeoGalleguillos\ShortStory\Model\Table as ShortStoryTable;
 use LeoGalleguillos\ShortStoryTest\TableTestCase;
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 use PHPUnit\Framework\TestCase;
 
 class ShortStoryTest extends TableTestCase

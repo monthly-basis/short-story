@@ -4,7 +4,7 @@ namespace LeoGalleguillos\ShortStory\View\Helper;
 use LeoGalleguillos\ShortStory\Model\Entity as ShortStoryEntity;
 use LeoGalleguillos\ShortStory\Model\Service as ShortStoryService;
 use LeoGalleguillos\ShortStory\View\Helper as ShortStoryHelper;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 class RootRelativeUrl extends AbstractHelper
 {

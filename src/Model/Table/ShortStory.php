@@ -3,7 +3,7 @@ namespace LeoGalleguillos\ShortStory\Model\Table;
 
 use Exception;
 use Generator;
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 
 class ShortStory
 {

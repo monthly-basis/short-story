@@ -3,7 +3,7 @@ namespace LeoGalleguillos\ShortStoryTest;
 
 use LeoGalleguillos\ShortStory\Module;
 use PHPUnit\Framework\TestCase;
-use Zend\Mvc\Application;
+use Laminas\Mvc\Application;
 
 class ModuleTest extends TestCase
 {
