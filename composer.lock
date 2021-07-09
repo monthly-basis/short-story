@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "409bcff7e530d2c767c82d33ec567c20",
+    "content-hash": "b8c5bc403ed8a836a27b29458ac81bf2",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -1548,6 +1548,41 @@
                 "source": "https://github.com/monthly-basis/flash/tree/v2.0.1"
             },
             "time": "2021-05-08T20:21:23+00:00"
+        },
+        {
+            "name": "monthly-basis/laminas-test",
+            "version": "v2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monthly-basis/laminas-test.git",
+                "reference": "ed841efab5f25df4c00d0778e5a30e9fcdc9cf8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monthly-basis/laminas-test/zipball/ed841efab5f25df4c00d0778e5a30e9fcdc9cf8f",
+                "reference": "ed841efab5f25df4c00d0778e5a30e9fcdc9cf8f",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-db": "^2.9",
+                "laminas/laminas-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MonthlyBasis\\LaminasTest\\": "src/",
+                    "MonthlyBasis\\LaminasTestTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/monthly-basis/laminas-test/issues",
+                "source": "https://github.com/monthly-basis/laminas-test/tree/v2.1.2"
+            },
+            "time": "2021-07-05T08:03:42+00:00"
         },
         {
             "name": "monthly-basis/string",
