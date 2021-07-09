@@ -2,6 +2,7 @@
 namespace MonthlyBasis\ShortStory;
 
 use MonthlyBasis\Flash\Model\Service as FlashService;
+use MonthlyBasis\ShortStory\Model\Db as ShortStoryDb;
 use MonthlyBasis\ShortStory\Model\Factory as ShortStoryFactory;
 use MonthlyBasis\ShortStory\Model\Service as ShortStoryService;
 use MonthlyBasis\ShortStory\Model\Table as ShortStoryTable;
@@ -32,6 +33,11 @@ class Module
     {
         return [
             'factories' => [
+                ShortStoryDb\Sql::class => function ($sm) {
+                    return new ShortStoryDb\Sql(
+                        $sm->get('main')
+                    );
+                },
                 ShortStoryFactory\ShortStory::class => function ($serviceManager) {
                     return new ShortStoryFactory\ShortStory(
                         $serviceManager->get(ShortStoryTable\ShortStory::class)
