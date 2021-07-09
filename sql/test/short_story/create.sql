@@ -4,4 +4,4 @@ CREATE TABLE `short_story` (
     `title` varchar(255) not null,
     `body` text,
     PRIMARY KEY (`short_story_id`)
-) charset=utf8;
+) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
