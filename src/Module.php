@@ -35,7 +35,7 @@ class Module
             'factories' => [
                 ShortStoryDb\Sql::class => function ($sm) {
                     return new ShortStoryDb\Sql(
-                        $sm->get('main')
+                        $sm->get('short-story')
                     );
                 },
                 ShortStoryFactory\ShortStory::class => function ($sm) {
@@ -62,7 +62,7 @@ class Module
                 },
                 ShortStoryTable\ShortStory::class => function ($sm) {
                     return new ShortStoryTable\ShortStory(
-                        $sm->get('main')
+                        $sm->get('short-story')
                     );
                 },
                 ShortStoryTable\ShortStory\ShortStoryId::class => function ($sm) {
