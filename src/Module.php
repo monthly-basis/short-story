@@ -19,9 +19,9 @@ class Module
                     'getRootRelativeUrl' => ShortStoryHelper\RootRelativeUrl::class,
                 ],
                 'factories' => [
-                    ShortStoryHelper\RootRelativeUrl::class => function ($serviceManager) {
+                    ShortStoryHelper\RootRelativeUrl::class => function ($sm) {
                         return new ShortStoryHelper\RootRelativeUrl(
-                            $serviceManager->get(ShortStoryService\RootRelativeUrl::class)
+                            $sm->get(ShortStoryService\RootRelativeUrl::class)
                         );
                     },
                 ],
@@ -38,31 +38,31 @@ class Module
                         $sm->get('main')
                     );
                 },
-                ShortStoryFactory\ShortStory::class => function ($serviceManager) {
+                ShortStoryFactory\ShortStory::class => function ($sm) {
                     return new ShortStoryFactory\ShortStory(
-                        $serviceManager->get(ShortStoryTable\ShortStory::class)
+                        $sm->get(ShortStoryTable\ShortStory::class)
                     );
                 },
-                ShortStoryService\RootRelativeUrl::class => function ($serviceManager) {
+                ShortStoryService\RootRelativeUrl::class => function ($sm) {
                     return new ShortStoryService\RootRelativeUrl(
-                        $serviceManager->get(StringService\UrlFriendly::class)
+                        $sm->get(StringService\UrlFriendly::class)
                     );
                 },
-                ShortStoryService\ShortStories::class => function ($serviceManager) {
+                ShortStoryService\ShortStories::class => function ($sm) {
                     return new ShortStoryService\ShortStories(
-                        $serviceManager->get(ShortStoryFactory\ShortStory::class),
-                        $serviceManager->get(ShortStoryTable\ShortStory::class)
+                        $sm->get(ShortStoryFactory\ShortStory::class),
+                        $sm->get(ShortStoryTable\ShortStory::class)
                     );
                 },
-                ShortStoryService\Submit::class => function ($serviceManager) {
+                ShortStoryService\Submit::class => function ($sm) {
                     return new ShortStoryService\Submit(
-                        $serviceManager->get(FlashService\Flash::class),
-                        $serviceManager->get(ShortStoryTable\ShortStory::class)
+                        $sm->get(FlashService\Flash::class),
+                        $sm->get(ShortStoryTable\ShortStory::class)
                     );
                 },
-                ShortStoryTable\ShortStory::class => function ($serviceManager) {
+                ShortStoryTable\ShortStory::class => function ($sm) {
                     return new ShortStoryTable\ShortStory(
-                        $serviceManager->get('main')
+                        $sm->get('main')
                     );
                 },
                 ShortStoryTable\ShortStory\ShortStoryId::class => function ($sm) {
