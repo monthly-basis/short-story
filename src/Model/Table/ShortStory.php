@@ -72,6 +72,10 @@ class ShortStory
                  , `user_id`
                  , `title`
                  , `body`
+                 , `created_datetime`
+                 , `deleted_datetime`
+                 , `deleted_user_id`
+                 , `deleted_reason`
               FROM `short_story`
              WHERE `short_story_id` = ?
                  ;
