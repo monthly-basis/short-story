@@ -19,11 +19,16 @@ class ShortStoryTest extends TableTestCase
         $this->shortStoryTable = new ShortStoryTable\ShortStory($this->getAdapter());
     }
 
-    public function testInitialize()
+    public function test_insert()
     {
-        $this->assertInstanceOf(
-            ShortStoryTable\ShortStory::class,
-            $this->shortStoryTable
+        $shortStoryId = $this->shortStoryTable->insert(
+            12345,
+            'title',
+            'body',
+        );
+        $this->assertSame(
+            '1',
+            $shortStoryId,
         );
     }
 }
