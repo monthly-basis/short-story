@@ -65,6 +65,12 @@ class Module
                         $serviceManager->get('main')
                     );
                 },
+                ShortStoryTable\ShortStory\ShortStoryId::class => function ($sm) {
+                    return new ShortStoryTable\ShortStory\ShortStoryId(
+                        $sm->get(ShortStoryDb\Sql::class),
+                        $sm->get(ShortStoryTable\ShortStory::class),
+                    );
+                },
             ],
         ];
     }
