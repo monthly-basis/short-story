@@ -5,7 +5,6 @@ use DateTime;
 use MonthlyBasis\LaminasTest\TableTestCase;
 use MonthlyBasis\ShortStory\Model\Db as ShortStoryDb;
 use MonthlyBasis\ShortStory\Model\Table as ShortStoryTable;
-use PHPUnit\Framework\TestCase;
 
 class ShortStoryIdTest extends TableTestCase
 {

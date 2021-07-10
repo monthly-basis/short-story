@@ -1,12 +1,8 @@
 <?php
 namespace MonthlyBasis\ShortStoryTest\Model\Table;
 
-use ArrayObject;
-use Exception;
 use MonthlyBasis\ShortStory\Model\Table as ShortStoryTable;
 use MonthlyBasis\LaminasTest\TableTestCase;
-use Laminas\Db\Adapter\Adapter;
-use PHPUnit\Framework\TestCase;
 
 class ShortStoryTest extends TableTestCase
 {
