@@ -54,6 +54,11 @@ class Module
                         $sm->get(ShortStoryTable\ShortStory::class)
                     );
                 },
+                ShortStoryService\Delete::class => function ($sm) {
+                    return new ShortStoryService\Delete(
+                        $sm->get(ShortStoryTable\ShortStory\ShortStoryId::class)
+                    );
+                },
                 ShortStoryService\Submit::class => function ($sm) {
                     return new ShortStoryService\Submit(
                         $sm->get(FlashService\Flash::class),
