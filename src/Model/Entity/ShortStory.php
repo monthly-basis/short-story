@@ -1,9 +1,10 @@
 <?php
 namespace MonthlyBasis\ShortStory\Model\Entity;
 
+use MonthlyBasis\Entity\Model\Entity as EntityEntity;
 use MonthlyBasis\ShortStory\Model\Entity as ShortStoryEntity;
 
-class ShortStory
+class ShortStory extends EntityEntity\Entity
 {
     protected $body;
     protected $shortStoryId;
