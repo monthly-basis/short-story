@@ -27,4 +27,26 @@ class ShortStoryTest extends TableTestCase
             $shortStoryId,
         );
     }
+
+    public function test_select_result()
+    {
+        $result = $this->shortStoryTable->select();
+        $this->assertEmpty($result);
+
+        $this->shortStoryTable->insert(
+            12345,
+            'title',
+            'body',
+        );
+        $this->shortStoryTable->insert(
+            12345,
+            'another title',
+            'another body',
+        );
+
+        $this->assertCount(
+            2,
+            $this->shortStoryTable->select()
+        );
+    }
 }

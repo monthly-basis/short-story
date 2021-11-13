@@ -2,8 +2,8 @@
 namespace MonthlyBasis\ShortStory\Model\Table;
 
 use Exception;
-use Generator;
 use Laminas\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Driver\Pdo\Result;
 
 class ShortStory
 {
@@ -41,13 +41,7 @@ class ShortStory
                     ->getGeneratedValue();
     }
 
-    /**
-     * Select.
-     *
-     * @yield array
-     * @return Generator
-     */
-    public function select(): Generator
+    public function select(): Result
     {
         $sql = '
             SELECT `short_story_id`
@@ -60,9 +54,7 @@ class ShortStory
              LIMIT 100
                  ;
         ';
-        foreach ($this->adapter->query($sql)->execute() as $row) {
-            yield($row);
-        }
+        return $this->adapter->query($sql)->execute();
     }
 
     public function selectWhereShortStoryId(int $shortStoryId): array
