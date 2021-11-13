@@ -14,11 +14,12 @@ class ShortStory
 
     public function buildFromArray(array $array): ShortStoryEntity\ShortStory
     {
-        $shortStoryEntity = new ShortStoryEntity\ShortStory();
-        $shortStoryEntity->setBody($array['body'])
-                         ->setShortStoryId($array['short_story_id'])
-                         ->setTitle($array['title'])
-                         ->setUserId((int) $array['user_id']);
+        $shortStoryEntity = (new ShortStoryEntity\ShortStory())
+            ->setBody($array['body'])
+            ->setShortStoryId($array['short_story_id'])
+            ->setTitle($array['title'])
+            ->setUserId((int) $array['user_id'])
+            ;
 
         return $shortStoryEntity;
     }
