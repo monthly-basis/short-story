@@ -6,10 +6,10 @@ use MonthlyBasis\ShortStory\Model\Entity as ShortStoryEntity;
 
 class ShortStory extends EntityEntity\Entity
 {
-    protected $body;
-    protected $shortStoryId;
-    protected $title;
-    protected $userId;
+    protected string $body;
+    protected int $shortStoryId;
+    protected string $title;
+    protected int $userId;
 
     public function getBody(): string
     {

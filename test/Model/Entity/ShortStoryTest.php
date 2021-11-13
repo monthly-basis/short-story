@@ -14,14 +14,14 @@ class ShortStoryTest extends TestCase
 
     public function test_settersAndGetters()
     {
-        $userId = 123;
+        $body = 'the body of the short story';
         $this->assertSame(
             $this->shortStoryEntity,
-            $this->shortStoryEntity->setUserId($userId)
+            $this->shortStoryEntity->setBody($body)
         );
         $this->assertSame(
-            $userId,
-            $this->shortStoryEntity->getUserId()
+            $body,
+            $this->shortStoryEntity->getBody()
         );
 
         $deletedDatetime = new DateTime();
@@ -52,6 +52,36 @@ class ShortStoryTest extends TestCase
         $this->assertSame(
             $deletedUserId,
             $this->shortStoryEntity->getDeletedUserId()
+        );
+
+        $shortStoryId = 98765;
+        $this->assertSame(
+            $this->shortStoryEntity,
+            $this->shortStoryEntity->setShortStoryId($shortStoryId)
+        );
+        $this->assertSame(
+            $shortStoryId,
+            $this->shortStoryEntity->getShortStoryId()
+        );
+
+        $title = 'The Title of the Short Story';
+        $this->assertSame(
+            $this->shortStoryEntity,
+            $this->shortStoryEntity->setTitle($title)
+        );
+        $this->assertSame(
+            $title,
+            $this->shortStoryEntity->getTitle()
+        );
+
+        $userId = 123;
+        $this->assertSame(
+            $this->shortStoryEntity,
+            $this->shortStoryEntity->setUserId($userId)
+        );
+        $this->assertSame(
+            $userId,
+            $this->shortStoryEntity->getUserId()
         );
     }
 }
