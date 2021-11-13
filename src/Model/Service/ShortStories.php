@@ -17,10 +17,7 @@ class ShortStories
     }
 
     /**
-     * Get short stories.
-     *
      * @yield ShortStoryEntity\ShortStory
-     * @return Generator
      */
     public function getShortStories(): Generator
     {
