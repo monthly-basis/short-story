@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1ce57568b01fae76fe9556870017718",
+    "content-hash": "4882d45fbe30c0a32697e013c6cc6bee",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2157,6 +2157,42 @@
                 }
             ],
             "time": "2021-09-03T17:53:30+00:00"
+        },
+        {
+            "name": "monthly-basis/entity",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monthly-basis/entity.git",
+                "reference": "e24a6114e95eccc69752838102555c5de8283204"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monthly-basis/entity/zipball/e24a6114e95eccc69752838102555c5de8283204",
+                "reference": "e24a6114e95eccc69752838102555c5de8283204",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-db": "^2.9",
+                "laminas/laminas-test": "^3.1",
+                "monthly-basis/laminas-test": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MonthlyBasis\\Entity\\": "src/",
+                    "MonthlyBasis\\EntityTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/monthly-basis/entity/issues",
+                "source": "https://github.com/monthly-basis/entity/tree/v2.1.0"
+            },
+            "time": "2021-11-13T10:19:09+00:00"
         },
         {
             "name": "monthly-basis/flash",
