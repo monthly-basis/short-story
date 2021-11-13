@@ -1,6 +1,7 @@
 <?php
 namespace MonthlyBasis\ShortStory\Model\Factory;
 
+use DateTime;
 use MonthlyBasis\ShortStory\Model\Entity as ShortStoryEntity;
 use MonthlyBasis\ShortStory\Model\Table as ShortStoryTable;
 
@@ -20,6 +21,16 @@ class ShortStory
             ->setTitle($array['title'])
             ->setUserId((int) $array['user_id'])
             ;
+
+        if (isset($array['deleted_datetime'])) {
+            $shortStoryEntity->setDeletedDateTime(new DateTime($array['deleted_datetime']));
+        }
+        if (isset($array['deleted_reason'])) {
+            $shortStoryEntity->setDeletedReason($array['deleted_reason']);
+        }
+        if (isset($array['deleted_user_id'])) {
+            $shortStoryEntity->setDeletedUserId($array['deleted_user_id']);
+        }
 
         return $shortStoryEntity;
     }
