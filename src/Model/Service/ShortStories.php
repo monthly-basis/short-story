@@ -21,7 +21,7 @@ class ShortStories
      */
     public function getShortStories(): Generator
     {
-        foreach ($this->shortStoryTable->select() as $array) {
+        foreach ($this->shortStoryTable->selectWhereDeletedDatetimeIsNull() as $array) {
             yield $this->shortStoryFactory->buildFromArray($array);
         }
     }

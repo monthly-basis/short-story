@@ -41,7 +41,7 @@ class ShortStory
                     ->getGeneratedValue();
     }
 
-    public function select(): Result
+    public function selectWhereDeletedDatetimeIsNull(): Result
     {
         $sql = '
             SELECT `short_story_id`
@@ -49,6 +49,7 @@ class ShortStory
                  , `title`
                  , `body`
               FROM `short_story`
+             WHERE `deleted_datetime` IS NULL
              ORDER
                 BY `short_story_id` DESC
              LIMIT 100

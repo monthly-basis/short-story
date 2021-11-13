@@ -28,9 +28,13 @@ class ShortStoryTest extends TableTestCase
         );
     }
 
-    public function test_select_result()
+    /**
+     * @TODO Make sure that Result entity does not include deleted short
+     *       stories.
+     */
+    public function test_selectWhereDeletedDatetimeIsNull_result()
     {
-        $result = $this->shortStoryTable->select();
+        $result = $this->shortStoryTable->selectWhereDeletedDatetimeIsNull();
         $this->assertEmpty($result);
 
         $this->shortStoryTable->insert(
@@ -46,7 +50,7 @@ class ShortStoryTest extends TableTestCase
 
         $this->assertCount(
             2,
-            $this->shortStoryTable->select()
+            $this->shortStoryTable->selectWhereDeletedDatetimeIsNull()
         );
     }
 }
